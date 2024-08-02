@@ -1,0 +1,36 @@
+POST http://localhost:8080/api/translate
+Content-Type: application/json
+
+{
+  "textToTranslate": "привет, мир!",
+  "languageFrom": "ru",
+  "languageTo": "en"
+}
+
+
+###
+
+
+POST http://localhost:8080/api/translate
+Content-Type: application/json
+
+{
+  "textToTranslate": "hello, world!",
+  "languageFrom": "en",
+  "languageTo": "ru"
+}
+
+###
+
+POST https://translate.api.cloud.yandex.net/translate/v2/translate
+Content-Type: application/json
+Authorization: Api-Key AQVNx2hBRzhy6GuM-UAOa5UFX91UrR8rk4w6bFHs
+
+{
+  "sourceLanguageCode": "en",
+  "targetLanguageCode": "ru",
+  "texts": [
+    "string"
+  ]
+}
+###

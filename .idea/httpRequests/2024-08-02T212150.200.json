@@ -1,0 +1,46 @@
+{
+  "responseData": {
+    "translatedText": "Здравствуйте",
+    "match": 1
+  },
+  "quotaFinished": false,
+  "mtLangSupported": null,
+  "responseDetails": "",
+  "responseStatus": 200,
+  "responderId": null,
+  "exception_code": null,
+  "matches": [
+    {
+      "id": "888470122",
+      "segment": "Hello",
+      "translation": "Здравствуйте",
+      "source": "en-GB",
+      "target": "ru-RU",
+      "quality": 74,
+      "reference": null,
+      "usage-count": 2,
+      "subject": "",
+      "created-by": "MateCat",
+      "last-updated-by": "MateCat",
+      "create-date": "2023-11-21 11:28:48",
+      "last-update-date": "2023-11-21 11:28:48",
+      "match": 1
+    },
+    {
+      "id": "589134124",
+      "segment": "Hello",
+      "translation": "Hello",
+      "source": "en-US",
+      "target": "ru-RU",
+      "quality": "74",
+      "reference": null,
+      "usage-count": 2,
+      "subject": "All",
+      "created-by": "MateCat",
+      "last-updated-by": "MateCat",
+      "create-date": "2021-11-05 08:59:49",
+      "last-update-date": "2021-11-05 08:59:49",
+      "match": 0.98
+    }
+  ]
+}

@@ -1,0 +1,816 @@
+POST http://localhost:8080/api/translate
+Content-Type: application/json
+Content-Length: 94
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "textToTranslate": "привет, мир!",
+  "languageFrom": "ru",
+  "languageTo": "en"
+}
+
+<> 2024-08-02T223710.200.json
+
+###
+
+POST http://localhost:8080/api/translate
+Content-Type: application/json
+Content-Length: 86
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "textToTranslate": "hello, world!",
+  "languageFrom": "en",
+  "languageTo": "ru"
+}
+
+<> 2024-08-02T223704.200.json
+
+###
+
+POST http://localhost:8080/api/translate
+Content-Type: application/json
+Content-Length: 86
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "textToTranslate": "hello, world!",
+  "languageFrom": "en",
+  "languageTo": "ru"
+}
+
+<> 2024-08-02T223605.500.json
+
+###
+
+POST http://localhost:8080/api/translate
+Content-Type: application/json
+Content-Length: 86
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "textToTranslate": "hello, world!",
+  "languageFrom": "en",
+  "languageTo": "ru"
+}
+
+<> 2024-08-02T222708.200.json
+
+###
+
+POST https://translate.api.cloud.yandex.net/translate/v2/translate
+Content-Type: application/json
+Authorization: Api-Key AQVNx2hBRzhy6GuM-UAOa5UFX91UrR8rk4w6bFHs
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+x-http2-scheme: https
+
+{
+  "sourceLanguageCode": "en",
+  "targetLanguageCode": "ru",
+  "texts": [
+    "string"
+  ]
+}
+
+<> 2024-08-02T222702.200.json
+
+###
+
+POST http://localhost:8080/api/translate
+Content-Type: application/json
+Content-Length: 86
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "textToTranslate": "hello, world!",
+  "languageFrom": "en",
+  "languageTo": "ru"
+}
+
+<> 2024-08-02T222610.500.json
+
+###
+
+POST https://translate.api.cloud.yandex.net/translate/v2/translate
+Content-Type: application/json
+Authorization: Api-Key AQVNx2hBRzhy6GuM-UAOa5UFX91UrR8rk4w6bFHs
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+x-http2-scheme: https
+
+{
+  "sourceLanguageCode": "en",
+  "targetLanguageCode": "ru",
+  "texts": [
+    "string"
+  ]
+}
+
+<> 2024-08-02T215823.200.json
+
+###
+
+POST https://translate.api.cloud.yandex.net/translate/v2/translate
+Content-Type: application/json
+Authorization: Api-Key AQVNx2hBRzhy6GuM-UAOa5UFX91UrR8rk4w6bFHs
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+x-http2-scheme: https
+
+{
+  "sourceLanguageCode": "en",
+  "targetLanguageCode": "ru",
+  "texts": [
+    "string"
+  ]
+}
+
+<> 2024-08-02T215157.200.json
+
+###
+
+POST https://translate.api.cloud.yandex.net/translate/v2/translate
+Content-Type: application/json
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+x-http2-scheme: https
+
+{
+  "sourceLanguageCode": "en",
+  "targetLanguageCode": "ru",
+  "texts": [
+    "string"
+  ]
+}
+
+<> 2024-08-02T215118.401.json
+
+###
+
+GET https://api.mymemory.translated.net/get?q=World&langpair=en|ru
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-02T212201.200.json
+
+###
+
+GET https://api.mymemory.translated.net/get?q=Hello&langpair=en|ru
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-02T212150.200.json
+
+###
+
+GET https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|ru
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-02T183057.200.json
+
+###
+
+GET https://api.mymemory.translated.net/get?q="привет, мир!&langpair=ru|en
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-02T183036.200.json
+
+###
+
+POST http://localhost:8080/api/translate
+Content-Type: application/json
+Content-Length: 94
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "textToTranslate": "привет, мир!",
+  "languageFrom": "ru",
+  "languageTo": "en"
+}
+
+<> 2024-08-02T182610.200.json
+
+###
+
+POST http://localhost:8080/api/translate
+Content-Type: application/json
+Content-Length: 86
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "textToTranslate": "hello, world!",
+  "languageFrom": "en",
+  "languageTo": "ru"
+}
+
+<> 2024-08-02T182604.200.json
+
+###
+
+POST http://localhost:8080/api/translate
+Content-Type: application/json
+Content-Length: 86
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "textToTranslate": "hello, world!",
+  "languageFrom": "en",
+  "languageTo": "ru"
+}
+
+<> 2024-08-02T182447.200.json
+
+###
+
+POST http://localhost:8080/api/translate
+Content-Type: application/json
+Content-Length: 94
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "textToTranslate": "привет, мир!",
+  "languageFrom": "ru",
+  "languageTo": "en"
+}
+
+<> 2024-08-02T182417.200.json
+
+###
+
+GET https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|zh
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-02T180843.200.json
+
+###
+
+GET https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|zh
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-02T180104.200.json
+
+###
+
+GET https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|zh
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-02T172334.200.json
+
+###
+
+GET https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|ru
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-02T172247.200.json
+
+###
+
+GET https://api.mymemory.translated.net/get?q=Hello World!&langpair=en|it
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-08-02T172215.200.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171511.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171508.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171505-1.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171505.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171503.400.json
+
+###
+
+GET http://localhost:1337/languages
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+content-length: 0
+
+<> 2024-08-02T171438.200.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171437.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171436.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171417.400.json
+
+###
+
+GET http://localhost:1337/languages
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+content-length: 0
+
+<> 2024-08-02T171410.200.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171408-1.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171408.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171346.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171339.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171338-1.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171338.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171337.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171336-2.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171336-1.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171336.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171335.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171334.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171316.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171315.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171314.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171119-1.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171119.400.json
+
+###
+
+POST http://localhost:1337/translate
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+Cookie: session=644dba71-1514-410a-a6fe-b34f0fda0888
+
+{
+  "q": "hello, world!",
+  "source": "en",
+  "target": "ru"
+}
+
+<> 2024-08-02T171118.400.json
+
+###
+

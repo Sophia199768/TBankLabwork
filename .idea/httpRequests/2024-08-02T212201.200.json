@@ -1,0 +1,62 @@
+{
+  "responseData": {
+    "translatedText": "радостью",
+    "match": 1
+  },
+  "quotaFinished": false,
+  "mtLangSupported": null,
+  "responseDetails": "",
+  "responseStatus": 200,
+  "responderId": null,
+  "exception_code": null,
+  "matches": [
+    {
+      "id": "887442999",
+      "segment": "World",
+      "translation": "радостью",
+      "source": "en-GB",
+      "target": "ru-RU",
+      "quality": 74,
+      "reference": null,
+      "usage-count": 2,
+      "subject": "",
+      "created-by": "MateCat",
+      "last-updated-by": "MateCat",
+      "create-date": "2023-10-26 15:54:23",
+      "last-update-date": "2023-10-26 15:54:23",
+      "match": 1
+    },
+    {
+      "id": "725826433",
+      "segment": "World",
+      "translation": "Мир",
+      "source": "en-GB",
+      "target": "ru-RU",
+      "quality": "74",
+      "reference": null,
+      "usage-count": 2,
+      "subject": "All",
+      "created-by": "MateCat",
+      "last-updated-by": "MateCat",
+      "create-date": "2023-02-28 08:18:12",
+      "last-update-date": "2023-02-28 08:18:12",
+      "match": 0.99
+    },
+    {
+      "id": "545039126",
+      "segment": "World",
+      "translation": "Мировая экономика",
+      "source": "en-US",
+      "target": "ru-RU",
+      "quality": "0",
+      "reference": null,
+      "usage-count": 2,
+      "subject": "All",
+      "created-by": "MateCat",
+      "last-updated-by": "MateCat",
+      "create-date": "2013-02-02 08:12:12",
+      "last-update-date": "2013-02-02 08:12:12",
+      "match": 0.98
+    }
+  ]
+}
