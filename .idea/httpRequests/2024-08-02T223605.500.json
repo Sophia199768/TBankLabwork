@@ -1,6 +1,0 @@
-{
-  "timestamp": "2024-08-02T19:36:05.863+00:00",
-  "status": 500,
-  "error": "Internal Server Error",
-  "path": "/api/translate"
-}
