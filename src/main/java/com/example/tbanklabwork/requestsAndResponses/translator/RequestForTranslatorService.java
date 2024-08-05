@@ -1,4 +1,4 @@
-package com.example.tbanklabwork.requestsAndResponses;
+package com.example.tbanklabwork.requestsAndResponses.translator;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

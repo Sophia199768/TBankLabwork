@@ -1,5 +1,6 @@
-package com.example.tbanklabwork.requestsAndResponses;
+package com.example.tbanklabwork.requestsAndResponses.translator;
 
+import com.example.tbanklabwork.requestsAndResponses.TranslateResponse;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

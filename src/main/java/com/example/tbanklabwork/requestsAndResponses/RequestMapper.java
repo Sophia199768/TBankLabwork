@@ -1,6 +1,7 @@
 package com.example.tbanklabwork.requestsAndResponses;
 
 import com.example.tbanklabwork.model.Translation;
+import com.example.tbanklabwork.requestsAndResponses.translator.RequestForTranslatorService;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

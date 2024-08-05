@@ -6,8 +6,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.List;
 
 @Repository
@@ -15,15 +13,12 @@ import java.util.List;
 public class TranslationDao {
     private final JdbcTemplate jdbcTemplate;
 
-    private final RowMapper<Translation> rowMapper = new RowMapper<Translation>() {
-        @Override
-        public Translation mapRow(ResultSet rs, int rowNum) throws SQLException {
-            Translation request = new Translation();
-            request.setIpAddress(rs.getString("ip_address"));
-            request.setTextToTranslate(rs.getString("text_to_translate"));
-            request.setTranslatedText(rs.getString("translated_text"));
-            return request;
-        }
+    private final RowMapper<Translation> rowMapper = (rs, rowNum) -> {
+        Translation request = new Translation();
+        request.setIpAddress(rs.getString("ip_address"));
+        request.setTextToTranslate(rs.getString("text_to_translate"));
+        request.setTranslatedText(rs.getString("translated_text"));
+        return request;
     };
 
     public void create(Translation request) {

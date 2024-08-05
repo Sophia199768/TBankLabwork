@@ -1,7 +1,13 @@
 package com.example.tbanklabwork.service;
 
+import com.example.tbanklabwork.model.Language;
 import com.example.tbanklabwork.requestsAndResponses.*;
+import com.example.tbanklabwork.requestsAndResponses.translator.RequestForTranslatorService;
+import com.example.tbanklabwork.requestsAndResponses.translator.ResponseFromTranslatorService;
+import com.example.tbanklabwork.requestsAndResponses.translator.ResponseLangFromTranslatorService;
+
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -19,10 +25,14 @@ import java.util.stream.Collectors;
 @Component
 @RequiredArgsConstructor
 public class TranslationService {
+
     private static final Integer RETRIES = 3;
     private final Integer MAX_THREADS = 10;
     private final ExecutorService executorService = Executors.newFixedThreadPool(MAX_THREADS);
+    private List<String> supportedLanguages = new ArrayList<>();
     private final RequestMapper mapper;
+
+
 
     public TranslateResponse createTranslation(TranslateRequest translateRequest) {
         String[] words = translateRequest.getTextToTranslate().split("\\s+");
@@ -31,6 +41,11 @@ public class TranslationService {
                 .collect(Collectors.joining(" "));
 
         return new TranslateResponse(result);
+    }
+
+    public Boolean isSupported(String lang) {
+        if (supportedLanguages.isEmpty()) supportedLanguages = fetchLanguages();
+        return supportedLanguages.contains(lang);
     }
 
     private String processWord(RequestForTranslatorService request) {
@@ -57,7 +72,7 @@ public class TranslationService {
         return word;
     }
 
-    private static String translate(RequestForTranslatorService request) {
+    public static String translate(RequestForTranslatorService request) {
         RestTemplate restTemplate = new RestTemplate();
 
         String url = "https://translate.api.cloud.yandex.net/translate/v2/translate";
@@ -68,5 +83,18 @@ public class TranslationService {
         ResponseEntity<ResponseFromTranslatorService> response = restTemplate.exchange(url, HttpMethod.POST, body, ResponseFromTranslatorService.class);
 
         return response.getBody().getTranslations().stream().findFirst().get().getText();
+    }
+
+    private List<String> fetchLanguages() {
+        RestTemplate restTemplate = new RestTemplate();
+
+        String url = "https://translate.api.cloud.yandex.net/translate/v2/languages";
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Api-Key " + "AQVNx2hBRzhy6GuM-UAOa5UFX91UrR8rk4w6bFHs");
+        HttpEntity<RequestForTranslatorService> body = new HttpEntity<>(headers);
+
+        ResponseEntity<ResponseLangFromTranslatorService> response = restTemplate.exchange(url, HttpMethod.POST, body, ResponseLangFromTranslatorService.class);
+
+        return response.getBody().getLanguages().stream().map(Language::getCode).toList();
     }
 }
