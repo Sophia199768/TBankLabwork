@@ -5,9 +5,7 @@ import com.example.tbanklabwork.requestsAndResponses.*;
 import com.example.tbanklabwork.requestsAndResponses.translator.RequestForTranslatorService;
 import com.example.tbanklabwork.requestsAndResponses.translator.ResponseFromTranslatorService;
 import com.example.tbanklabwork.requestsAndResponses.translator.ResponseLangFromTranslatorService;
-
 import lombok.RequiredArgsConstructor;
-
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -22,6 +20,9 @@ import java.util.Objects;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
+/**
+ * Service for handling translation operations and language support checks.
+ */
 @Component
 @RequiredArgsConstructor
 public class TranslationService {
@@ -32,22 +33,40 @@ public class TranslationService {
     private List<String> supportedLanguages = new ArrayList<>();
     private final RequestMapper mapper;
 
-
-
+    /**
+     * Creates a translation response for a given TranslateRequest.
+     * Translates each word separately and combines the results into a single response.
+     *
+     * @param translateRequest the request containing text and language information
+     * @return a TranslateResponse containing the translated text
+     */
     public TranslateResponse createTranslation(TranslateRequest translateRequest) {
         String[] words = translateRequest.getTextToTranslate().split("\\s+");
         String result = Arrays.stream(words).map(word ->
-                processWord(mapper.toTranslateRequest(word, translateRequest)))
+                        processWord(mapper.toTranslateRequest(word, translateRequest)))
                 .collect(Collectors.joining(" "));
 
         return new TranslateResponse(result);
     }
 
+    /**
+     * Checks if a given language is supported.
+     * Fetches the list of supported languages if not already fetched.
+     *
+     * @param lang the language code to check
+     * @return true if the language is supported, false otherwise
+     */
     public Boolean isSupported(String lang) {
         if (supportedLanguages.isEmpty()) supportedLanguages = fetchLanguages();
         return supportedLanguages.contains(lang);
     }
 
+    /**
+     * Processes a single word by attempting translation with retries.
+     *
+     * @param request the request containing the word and language information
+     * @return the translated word
+     */
     private String processWord(RequestForTranslatorService request) {
         String word;
         List<Callable<String>> subTasks = new ArrayList<>();
@@ -72,6 +91,12 @@ public class TranslationService {
         return word;
     }
 
+    /**
+     * Translates a given RequestForTranslatorService using an external translation API.
+     *
+     * @param request the request containing the text and language information
+     * @return the translated text
+     */
     public static String translate(RequestForTranslatorService request) {
         RestTemplate restTemplate = new RestTemplate();
 
@@ -85,6 +110,11 @@ public class TranslationService {
         return response.getBody().getTranslations().stream().findFirst().get().getText();
     }
 
+    /**
+     * Fetches the list of supported languages from the translation API.
+     *
+     * @return a list of supported language codes
+     */
     private List<String> fetchLanguages() {
         RestTemplate restTemplate = new RestTemplate();
 

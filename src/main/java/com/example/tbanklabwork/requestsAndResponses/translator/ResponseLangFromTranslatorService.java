@@ -7,9 +7,16 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+/**
+ * Represents a response from the translator service containing a list of supported languages.
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class ResponseLangFromTranslatorService {
+
+    /**
+     * The list of supported languages.
+     */
     private List<Language> languages;
 }
